@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "TextEditor",
+            "request": "launch",
+            "mainClass": "TextEditor",
+            "projectName": "myjava_33653a7d"
+        },
+        {
+            "type": "java",
+            "name": "texteditor",
+            "request": "launch",
+            "mainClass": "texteditor",
+            "projectName": "myjava_33653a7d"
+        },
+        {
+            "type": "java",
+            "name": "testttt",
+            "request": "launch",
+            "mainClass": "myjava.testttt",
+            "projectName": "myjava_33653a7d"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}

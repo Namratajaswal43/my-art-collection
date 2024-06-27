@@ -1,0 +1,41 @@
+package swinglayout;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class SwingLayoutExample {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() ->
+                createAndShowGUI());
+    }
+
+    private static void createAndShowGUI() {
+        JFrame frame = new JFrame("Swing Layout Example");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // FlowLayout
+        JPanel flowPanel = new JPanel(new FlowLayout());
+        flowPanel.add(new JButton("Button 1"));
+        flowPanel.add(new JButton("Button 2"));
+        frame.add(flowPanel, BorderLayout.NORTH);
+
+        // BorderLayout
+        JPanel borderPanel = new JPanel(new BorderLayout());
+        borderPanel.add(new JButton("Button 3"), BorderLayout.WEST);
+        borderPanel.add(new JButton("Button 4"), BorderLayout.CENTER);
+        borderPanel.add(new JButton("Button 5"), BorderLayout.EAST);
+        frame.add(borderPanel, BorderLayout.CENTER);
+
+        // GridLayout
+        JPanel gridPanel = new JPanel(new GridLayout(2, 2));
+        gridPanel.add(new JButton("Button 6"));
+        gridPanel.add(new JButton("Button 7"));
+        gridPanel.add(new JButton("Button 8"));
+        gridPanel.add(new JButton("Button 9"));
+        frame.add(gridPanel, BorderLayout.SOUTH);
+
+        frame.setSize(400, 300);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+    }
+}

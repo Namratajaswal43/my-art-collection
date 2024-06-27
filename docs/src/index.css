@@ -1,0 +1,29 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    font-family: 'gilroy';
+}
+::selection{
+    color: rgb(233, 142, 38);
+}
+/* styles.css */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+  
+}
+/* card.css */
+.card {
+    width: 15rem; /* Equivalent to w-60 in Tailwind CSS */
+    height: 18rem; /* Equivalent to h-72 in Tailwind CSS */
+    border-radius: 20px; /* Equivalent to rounded-[20px] in Tailwind CSS */
+    background-color: rgba(203, 213, 224, 0.9); /* Equivalent to bg-zinc-900/90 in Tailwind CSS */
+}
+

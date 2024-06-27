@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Bulb Color</title>
+    <style>
+        #bulb {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            margin: 20px;
+            border-radius: 50%;
+        }
+        button {
+            display: block;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="bulb"></div>
+    <button>Turn On</button>
+
+    <script>
+        var b = document.querySelector("#bulb");
+        var btn = document.querySelector("button");
+
+        btn.addEventListener("click", function() {
+            b.style.backgroundColor = "yellow";
+        });
+    </script>
+</body>
+</html>
